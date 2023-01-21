@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        compose_ui_version = '1.1.1'
+        room_version = '2.4.0-alpha04'
+        navigation_version = '2.5.0'
+        retrofit_version = '2.9.0'
+        lifecycle_version = '2.4.0-alpha04'
+        retrofit_version = '2.9.0'
+    }
+    dependencies {
+        //hilt
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.44.2"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
+    }
+}
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+}
